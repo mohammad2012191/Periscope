@@ -242,14 +242,6 @@ python scripts/run_qa.py --server http://localhost:8000 --model Qwen/Qwen3.5-4B 
 
 ---
 
-## Notes
-- **Settings.** Every call is one forward pass with `max_tokens=1`, reading the top 20 log-probabilities at the answer position, at temperature 1.0 with `top_p=1`, `top_k=-1`, `min_p=0`. Temperature rescales every log-odds by the same constant and cannot change a ranking, while nucleus and top-k truncation can remove an answer token, so both are disabled. Thinking mode is turned off where the model has one.
-- **The abstain option.** The question probe lists the options and one more, `Unsure`, and each option is scored by its log-odds against it, so a span without evidence scores every option low. The relevance probe uses `No` as the abstain option. Reads use the same prompt without it.
-- **Determinism.** Scores are read, not sampled. Batched inference on a GPU is not bit-exact, so a rerun can flip a few close answers; the paper measures this run-to-run variation in the appendix.
-- **Memory.** Periscope's memory is set by the model's weights, not by the text: no probe exceeds one window, and the probes of a text can run one at a time on a device that holds only one.
-
----
-
 ## Citation
 
 If you use Periscope in your research, please cite:

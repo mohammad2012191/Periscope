@@ -1,0 +1,6 @@
+requests
+numpy
+transformers>=4.51
+datasets
+vllm>=0.10
+torch  # only for the embedding baselines

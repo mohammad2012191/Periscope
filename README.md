@@ -3,7 +3,7 @@
 
 <div align="center">
 
-[![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b)](https://arxiv.org/abs/XXXX.XXXXX)
+[![arXiv](https://img.shields.io/badge/arXiv-2610.04047-b31b1b)](https://arxiv.org/abs/2610.04047)
 
 </div>
 
@@ -247,13 +247,13 @@ python scripts/run_qa.py --server http://localhost:8000 --model Qwen/Qwen3.5-4B 
 If you use Periscope in your research, please cite:
 
 ```bibtex
-@misc{eltahir2026periscope,
-      title={Periscope: Extending Frozen Language Models Beyond Their Context Window},
-      author={Mohamed Eltahir and Anas Obayd and Raed Rashid and Abdulrahman Alghamdi and Abdulrahman Mousa and Abdullah Mahmoud and Tanveer Hussain and Naeemullah Khan},
+@misc{eltahir2026periscopeextendingfrozenlanguage,
+      title={Periscope: Extending Frozen Language Models Beyond Their Context Window}, 
+      author={Mohamed Eltahir and Anas Obayd and Raed Rashid and Abdulrahman Alghamdi and Abdulrahman Mousa and Abdallah Ahmed and Tanveer Hussain and Naeemullah Khan},
       year={2026},
-      eprint={XXXX.XXXXX},
+      eprint={2610.04047},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
-      url={https://arxiv.org/abs/XXXX.XXXXX},
+      url={https://arxiv.org/abs/2610.04047}, 
 }
 ```
